@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Магазин — Академия Кости Андреева</title>
-<meta name="description" content="Мерч Академии Кости Андреева: худи, футболки, кепки, бутылки и стикеры с фирменным логотипом KA. Предзаказ.">
+<meta name="description" content="Мерч Академии Кости Андреева: худи, футболки, джерси, шлемы, перчатки, бутылки, кепки, носки и стикеры с фирменным логотипом KA.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/logo/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap&subset=cyrillic,latin" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@600;700;800;900&family=Rubik:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap&subset=cyrillic,latin" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,7 +37,7 @@
   <div class="container">
     <div class="eyebrow">Магазин</div>
     <h1>Мерч<br>академии</h1>
-    <p>Фирменная линейка с логотипом KA. Носи парк с собой. Сейчас идёт предзаказ первой партии — оформи, и заберёшь на тренировке.</p>
+    <p>Фирменная линейка с логотипом KA. Носи парк с собой. Нажми на товар, чтобы посмотреть фото крупнее, размеры и описание. Сейчас идёт предзаказ первой партии.</p>
   </div>
 </section>
 
@@ -45,51 +45,75 @@
   <div class="container">
     <div class="grid g-3">
 
-      <div class="product reveal">
-        <div class="ph"><img src="assets/img/rider-hoodie.jpg" alt="Худи"></div>
-        <div class="body"><span class="pill">Предзаказ</span>
-          <h3 style="margin-top:10px">Худи KA</h3>
-          <div class="row"><span class="p">4 900 ₽</span><a class="btn btn-ghost" href="#zakaz">Заказать</a></div>
+      <div class="product reveal" data-product data-name="Худи KA" data-price="4 900 ₽" data-img="assets/img/hoodies.jpg"
+        data-desc="Тёплый худи из плотного футера с начёсом. Вышитый логотип на груди и крупный принт на спине. Унисекс, свободный крой." data-sizes="S,M,L,XL,XXL">
+        <div class="ph"><img src="assets/img/hoodies.jpg" alt="Худи KA"></div>
+        <div class="body"><span class="pill">4 цвета</span><h3>Худи KA</h3>
+          <div class="row"><span class="p">4 900 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
         </div>
       </div>
 
-      <div class="product reveal">
-        <div class="ph"><img src="assets/img/merch.jpg" alt="Футболки"></div>
-        <div class="body"><span class="pill">4 цвета</span>
-          <h3 style="margin-top:10px">Футболка KA</h3>
-          <div class="row"><span class="p">2 200 ₽</span><a class="btn btn-ghost" href="#zakaz">Заказать</a></div>
+      <div class="product reveal" data-product data-name="Футболка KA" data-price="2 200 ₽" data-img="assets/img/tees.jpg"
+        data-desc="Плотный хлопок 190 г/м². Логотип-хендлбар по центру груди. Не тянется, держит форму после стирок." data-sizes="S,M,L,XL,XXL">
+        <div class="ph"><img src="assets/img/tees.jpg" alt="Футболка KA"></div>
+        <div class="body"><span class="pill">4 цвета</span><h3>Футболка KA</h3>
+          <div class="row"><span class="p">2 200 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
         </div>
       </div>
 
-      <div class="product reveal">
-        <div class="ph"><img src="assets/img/bottles.jpg" alt="Бутылка"></div>
-        <div class="body"><span class="pill">5 цветов</span>
-          <h3 style="margin-top:10px">Бутылка KA</h3>
-          <div class="row"><span class="p">1 200 ₽</span><a class="btn btn-ghost" href="#zakaz">Заказать</a></div>
+      <div class="product reveal" data-product data-name="Джерси KA" data-price="3 900 ₽" data-img="assets/img/jerseys.jpg"
+        data-desc="Лёгкая дышащая джерси для катания. Длинный рукав, свободный крой, логотип на груди и спине. Быстро сохнет." data-sizes="S,M,L,XL">
+        <div class="ph"><img src="assets/img/jerseys.jpg" alt="Джерси KA"></div>
+        <div class="body"><span class="pill">форма</span><h3>Джерси KA</h3>
+          <div class="row"><span class="p">3 900 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
         </div>
       </div>
 
-      <div class="product reveal">
-        <div class="ph" style="background:#f4f2ee"><img class="lg" src="assets/logo/logo-mark.png" alt="Кепка"></div>
-        <div class="body"><span class="pill">Предзаказ</span>
-          <h3 style="margin-top:10px">Кепка KA</h3>
-          <div class="row"><span class="p">1 900 ₽</span><a class="btn btn-ghost" href="#zakaz">Заказать</a></div>
+      <div class="product reveal" data-product data-name="Шлем KA" data-price="4 500 ₽" data-img="assets/img/helmets.jpg"
+        data-desc="Сертифицированный шлем для BMX и скейта. Матовое покрытие, регулируемый обод и вентиляция, логотип сбоку." data-sizes="S/M,L/XL">
+        <div class="ph"><img src="assets/img/helmets.jpg" alt="Шлем KA"></div>
+        <div class="body"><span class="pill">4 цвета</span><h3>Шлем KA</h3>
+          <div class="row"><span class="p">4 500 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
         </div>
       </div>
 
-      <div class="product reveal">
-        <div class="ph"><img class="lg" src="assets/logo/logo-mark-white.png" alt="Стикерпак"></div>
-        <div class="body"><span class="pill">Набор</span>
-          <h3 style="margin-top:10px">Стикерпак KA</h3>
-          <div class="row"><span class="p">500 ₽</span><a class="btn btn-ghost" href="#zakaz">Заказать</a></div>
+      <div class="product reveal" data-product data-name="Перчатки KA" data-price="1 800 ₽" data-img="assets/img/gloves.jpg"
+        data-desc="Полнопальцевые перчатки с силиконовым хватом и защитой ладони. Дышащая сетка на тыльной стороне." data-sizes="S,M,L,XL">
+        <div class="ph"><img src="assets/img/gloves.jpg" alt="Перчатки KA"></div>
+        <div class="body"><span class="pill">4 цвета</span><h3>Перчатки KA</h3>
+          <div class="row"><span class="p">1 800 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
         </div>
       </div>
 
-      <div class="product reveal">
-        <div class="ph" style="background:#f4f2ee"><img class="lg" src="assets/logo/logo-full.png" alt="Носки"></div>
-        <div class="body"><span class="pill">Предзаказ</span>
-          <h3 style="margin-top:10px">Носки KA</h3>
-          <div class="row"><span class="p">600 ₽</span><a class="btn btn-ghost" href="#zakaz">Заказать</a></div>
+      <div class="product reveal" data-product data-name="Бутылка KA" data-price="1 200 ₽" data-img="assets/img/bottles.jpg"
+        data-desc="Спортивная бутылка 750 мл с фирменным логотипом. Не протекает, удобный носик-клапан. Пять цветов на выбор.">
+        <div class="ph"><img src="assets/img/bottles.jpg" alt="Бутылка KA"></div>
+        <div class="body"><span class="pill">5 цветов</span><h3>Бутылка KA</h3>
+          <div class="row"><span class="p">1 200 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
+        </div>
+      </div>
+
+      <div class="product reveal" data-product data-name="Кепка KA" data-price="1 900 ₽" data-img="assets/img/cap.jpg"
+        data-desc="Классическая шестиклинка с вышивкой логотипа спереди. Регулируемая застёжка сзади, one size.">
+        <div class="ph"><img src="assets/img/cap.jpg" alt="Кепка KA"></div>
+        <div class="body"><span class="pill">one size</span><h3>Кепка KA</h3>
+          <div class="row"><span class="p">1 900 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
+        </div>
+      </div>
+
+      <div class="product reveal" data-product data-name="Носки KA" data-price="600 ₽" data-img="assets/img/socks.jpg"
+        data-desc="Высокие спортивные носки с логотипом. Хлопок с эластаном, усиленный мысок и пятка." data-sizes="36–40,41–46">
+        <div class="ph"><img src="assets/img/socks.jpg" alt="Носки KA"></div>
+        <div class="body"><span class="pill">пара</span><h3>Носки KA</h3>
+          <div class="row"><span class="p">600 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
+        </div>
+      </div>
+
+      <div class="product reveal" data-product data-name="Стикерпак KA" data-price="500 ₽" data-img="assets/img/patches.jpg"
+        data-desc="Набор виниловых стикеров и тканевых патчей с логотипом и слоганом «Техника. Точность. Контроль. Воздух».">
+        <div class="ph"><img src="assets/img/patches.jpg" alt="Стикерпак KA"></div>
+        <div class="body"><span class="pill">набор</span><h3>Стикерпак KA</h3>
+          <div class="row"><span class="p">500 ₽</span><span class="btn btn-ghost">Подробнее</span></div>
         </div>
       </div>
 
@@ -100,19 +124,35 @@
 <section class="section" style="padding-top:0" id="zakaz">
   <div class="container">
     <div class="band reveal">
-      <h2>Оформить<br><span style="color:var(--gold)">предзаказ</span></h2>
-      <p>Пока работаем по предзаказу через Telegram — напиши, что хочешь, размер и цвет. Соберём партию и позовём забирать.</p>
+      <h2>Оформить<br><span class="c-lime">предзаказ</span></h2>
+      <p>Пока работаем по предзаказу через Telegram — напиши, что хочешь, размер и цвет. Соберём партию и позовём забирать на тренировке.</p>
       <a class="btn btn-gold" href="https://t.me/">Написать в Telegram</a>
     </div>
   </div>
 </section>
+
+<!-- модалка-превью товара -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-ov"></div>
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <div class="modal-img"><img id="m-img" src="" alt=""></div>
+    <div class="modal-info">
+      <h3 id="m-name"></h3>
+      <div class="modal-price" id="m-price"></div>
+      <p id="m-desc"></p>
+      <div id="m-sizes-wrap"><div class="modal-lbl">Размер</div><div class="chips" id="m-sizes"></div></div>
+      <a class="btn btn-gold" id="m-tg" href="https://t.me/">Заказать в Telegram</a>
+    </div>
+  </div>
+</div>
 
 <!--FOOTER-->
 <footer class="footer">
   <div class="container">
     <div class="f-grid">
       <div>
-        <img class="flogo" src="assets/logo/logo-full-white.png" alt="Академия Кости Андреева">
+        <img class="flogo" src="assets/logo/logo-mark-white.png" alt="Академия Кости Андреева">
         <p class="small">Школа BMX в Москве. Учим кататься с нуля и растим райдеров — детей, подростков и взрослых.</p>
       </div>
       <div>
