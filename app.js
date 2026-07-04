@@ -20,17 +20,6 @@ if (burger && links) {
 // текущий год
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 
-// переключатель темы
-const themeBtn = document.getElementById('themeToggle');
-if (themeBtn) {
-  themeBtn.addEventListener('click', () => {
-    const light = document.documentElement.getAttribute('data-theme') === 'light';
-    const next = light ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
-}
-
 // появление при скролле
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
